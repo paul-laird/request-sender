@@ -28,3 +28,5 @@ def sendRequests(fn,url,data,num,interval,var):
       f.write(f"Response Text: {resp.text}"+'\n')
       if not i%10:
         f.flush()
+
+sendRequests(fn,url,data,num,interval,var)
