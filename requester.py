@@ -9,10 +9,11 @@ data = sys.argv[3]
 num= int(sys.argv[4])
 interval=int(sys.argv[5])
 fn=sys.argv[1]
-parser = argparse.ArgumentParser(description='A simple script demonstrating argparse with defaults.')
-parser.add_argument('--var', type=str, default='page', help='The element of json data that will increment.')
-args = parser.parse_args()
-var=args.var
+#parser = argparse.ArgumentParser(description='A simple script demonstrating argparse with defaults.')
+#parser.add_argument('--var', type=str, default='page', help='The element of json data that will increment.')
+#args = parser.parse_args()
+#var=args.var
+var=sys.argv[6]
 
 def sendRequests(fn,url,data,num,interval,var):
   with open(fn,'w') as f:
