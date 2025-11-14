@@ -4,7 +4,7 @@ import time
 url = 'https://helloworld.requestcatcher.com/test'
 data = 'Hello World!'
 
-with open('request.log','w') as f:
+with open(sys.argv[1],'w') as f:
   for i in range(10000):
     resp = requests.post(url, data=data + str(i))
     time.sleep(15)
