@@ -1,3 +1,4 @@
+import requests
 url = 'https://helloworld.requestcatcher.com/test'
 data = 'Hello World!'
 
