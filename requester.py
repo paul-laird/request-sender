@@ -1,3 +1,4 @@
+import sys
 import requests
 import time
 url = 'https://helloworld.requestcatcher.com/test'
@@ -10,3 +11,5 @@ with open('request.log','w') as f:
     f.write(data + str(i)+',')
     f.write(f"Status Code: {resp.status_code}"+',')
     f.write(f"Response Text: {resp.text}"+'\n')
+    if not i%10:
+      f.flush()
