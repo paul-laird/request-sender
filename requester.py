@@ -1,8 +1,8 @@
 import sys
 import requests
 import time
-url = 'https://helloworld.requestcatcher.com/test'
-data = 'Hello World!'
+url = 'https://helloworld.requestcatcher.com/'+sys.argv[2]
+data = f'{sys.argv[3]}! '
 
 with open(sys.argv[1],'w') as f:
   for i in range(10000):
